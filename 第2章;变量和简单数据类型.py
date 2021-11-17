@@ -1,12 +1,14 @@
+# coding:utf-8
+
 '''
 Author: your name
 Date: 2021-11-17 14:59:38
-LastEditTime: 2021-11-17 15:54:40
-LastEditors: your name
+LastEditTime: 2021-11-17 16:08:54
+LastEditors: Please set LastEditors
 Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 FilePath: \Python编程：从入门到实践\第2章;变量和简单数据类型.py
 '''
-# coding:utf-8
+
 
 start_up = 2.3
 
@@ -30,10 +32,13 @@ while True:
         print('\t*'+user_name.lstrip()+'*\n')
         print('\t*'+user_name.rstrip()+'*\n')
         print('\t*'+user_name.strip()+'*\n')
+    elif start_up == 2.8:
+        print(4+4)
+        print(2*4)
+        print(16-8)
+        print(16/2)
         break
-
-    start_up = start_up+0.1
-
+    start_up = int((start_up+0.1)*100)/100  # 去除精度误差
 
 print("FNISH!!!")
 
